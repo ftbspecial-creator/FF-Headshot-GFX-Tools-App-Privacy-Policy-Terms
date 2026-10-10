@@ -3,8 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#07080d">
 <title>FF Headshot &amp; GFX Tools – Privacy Policy &amp; Terms</title>
-<meta name="description" content="Privacy Policy and Terms of Use for the FF Headshot &amp; GFX Tools Android app by Krishna Chauhan.">
+<meta name="description" content="Privacy Policy and Terms of Use for the FF Headshot &amp; GFX Tools Android app by Krishna Chauhan (owner) and AD_FOISAL AHMED (developer).">
 <style>
 :root{
   --bg:#f2f5f9; --panel:#ffffff; --ink:#111723; --sub:#566174; --line:#dce3ec;
@@ -84,6 +85,8 @@ td:first-child{font-weight:650;white-space:nowrap}
 .t-local{background:var(--ok-soft);color:var(--ok)}.t-out{background:var(--out-soft);color:var(--out)}
 code{font:13px ui-monospace,Consolas,monospace;background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:1px 6px;word-break:break-all}
 
+.who{margin:18px 0 8px;font-size:12.5px;font-weight:700;color:var(--sub);text-transform:uppercase;letter-spacing:.09em}
+#contact .who:first-of-type{margin-top:4px}
 main #terms{background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:32px 34px;margin-top:14px}
 #contact dl{margin:0;display:grid;grid-template-columns:110px 1fr;gap:10px 16px;background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:22px 24px;max-width:560px}
 dt{color:var(--sub)} dd{margin:0;word-break:break-word}
@@ -105,20 +108,65 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--sub);font-siz
   dt{margin-top:8px}
 }
 @media print{nav,.top{display:none}.layout{display:block}header::before,header::after{display:none}}
+
+/* ---- polish ---- */
+header{background-image:radial-gradient(rgba(255,255,255,.055) 1px,transparent 1px);background-size:22px 22px}
+.bar{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--accent),#7c5cff);z-index:30}
+.col{transition:transform .2s,border-color .2s}
+@media (hover:hover){.col:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.28)}}
+main section h2{display:flex;align-items:center}
+.n{flex:none}
+/* ---- phones ---- */
+@media (max-width:640px){
+  body{font-size:16px;line-height:1.7}
+  .hero{padding:32px 18px 30px}
+  .brand{margin-bottom:20px}
+  h1{font-size:clamp(30px,9.5vw,40px);max-width:none}
+  .lede{font-size:16.5px;margin-top:14px}
+  .chips{gap:6px;margin-top:18px}
+  .chips li{font-size:12.5px;padding:4px 12px 4px 10px}
+  .meta{font-size:13px;line-height:1.6}
+  .ledger{gap:12px;margin-top:26px}
+  .col{padding:16px 16px 12px;border-radius:14px}
+  .col h2{font-size:16.5px}
+  .layout{padding:0 18px 56px}
+  nav{margin:0 -18px 20px;padding:10px 18px;gap:8px}
+  nav a{padding:8px 16px;font-size:14px;min-height:38px;display:flex;align-items:center}
+  main section{padding:26px 0;scroll-margin-top:68px}
+  h2{font-size:21px;line-height:1.3}
+  .n{width:28px;height:28px;font-size:14px;margin-right:10px;border-radius:9px}
+  p,ul{max-width:none}
+  main #terms{padding:22px 18px;border-radius:16px}
+  .note{padding:12px 14px;font-size:14.5px}
+  #contact dl{padding:16px 18px;max-width:none;border-radius:14px}
+  .top{right:14px;bottom:14px}
+  /* tables become stacked cards */
+  .tbl{overflow:visible;border:0;background:transparent;box-shadow:none;border-radius:0}
+  table{min-width:0;display:block}
+  thead{position:absolute;left:-9999px}
+  tbody{display:block}
+  tbody tr{display:block;background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin-bottom:12px}
+  tbody tr:hover{background:var(--panel)}
+  td{display:block;border:0;padding:3px 0;white-space:normal;font-size:15px}
+  td:first-child{font-size:16.5px;padding-bottom:4px}
+  td:not(:first-child)::before{content:attr(data-label);display:block;font-size:11.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);margin:10px 0 3px}
+}
+@media (max-width:360px){h1{font-size:28px}.chips li{font-size:12px}}
 </style>
 </head>
 <body>
 
+<div class="bar" id="bar"></div>
 <header>
   <div class="wrap hero">
     <div class="brand">
       <div class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8-7 10-4-2-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg></div>
-      <div><b>FF Headshot &amp; GFX Tools</b><span>Android app · com.slow.gametools</span></div>
+      <div><b>FF Headshot &amp; GFX Tools</b><span>Android app · com.ffheadshotgfxtools</span></div>
     </div>
     <h1>Privacy Policy and Terms of Use</h1>
     <p class="lede">We run no accounts and no servers. Your settings stay on your phone. Ads are the only thing that connects to a third party, and this page explains how.</p>
     <ul class="chips"><li>No account</li><li>No servers of ours</li><li>Ads by Google AdMob</li><li>Not for children under 13</li></ul>
-    <p class="meta">Last updated: October 10, 2026 · Publisher: Krishna Chauhan</p>
+    <p class="meta">Last updated: October 10, 2026 · Owner: Krishna Chauhan · Developer: AD_FOISAL AHMED</p>
 
     <div class="ledger" id="summary">
       <div class="col c-local">
@@ -159,7 +207,7 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--sub);font-siz
   <main>
     <section id="collect">
       <h2><span class="n">1</span>What we collect</h2>
-      <p>This policy covers the Android app <b>FF Headshot &amp; GFX Tools</b> (the "app"), published by <b>Krishna Chauhan</b> ("we", "us"). By using the app you agree to it.</p>
+      <p>This policy covers the Android app <b>FF Headshot &amp; GFX Tools</b> (the "app"), owned and published by <b>Krishna Chauhan</b> and developed by <b>AD_FOISAL AHMED</b> ("we", "us"). By using the app you agree to it.</p>
       <p>We do not collect personal information ourselves and we have no servers that receive your data. The app keeps a few things in its private storage on your device:</p>
       <ul>
         <li>your chosen language, and whether you accepted this policy and finished the welcome screens;</li>
@@ -185,12 +233,12 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--sub);font-siz
       <div class="tbl"><table>
         <thead><tr><th>Feature</th><th>What it reads or does</th><th>Leaves your device?</th></tr></thead>
         <tbody>
-          <tr><td>Home dashboard</td><td>Reads free and used RAM, battery level and battery temperature from Android and shows them to you.</td><td><span class="tag t-local">No</span></td></tr>
-          <tr><td>Booster</td><td>Reads the list of apps that have a launcher icon, then asks Android to stop their background processes. It then compares free RAM before and after. Android may restart those apps.</td><td><span class="tag t-local">No</span></td></tr>
-          <tr><td>Network</td><td>Checks whether you are on Wi-Fi, mobile data or Ethernet. The ping test opens a short connection to Google's public DNS server (<code>8.8.8.8</code>) and times it, so that server sees your IP address like any website would. When you choose a DNS, the app copies its hostname to your clipboard and opens Android settings; you set Private DNS yourself.</td><td><span class="tag t-out">Ping only</span></td></tr>
-          <tr><td>Sensitivity and DPI</td><td>Reads your phone's manufacturer, model and total RAM to suggest starting values.</td><td><span class="tag t-local">No</span></td></tr>
-          <tr><td>GFX presets, player configs and tips</td><td>Saves your choices and reading progress. When you tap Copy, the app writes text to your clipboard. It does not read your clipboard.</td><td><span class="tag t-local">No</span></td></tr>
-          <tr><td>Language</td><td>Uses Google ML Kit to translate the app's text on your device. The language pack is downloaded from Google when you pick a language.</td><td><span class="tag t-out">Pack download</span></td></tr>
+          <tr><td data-label="Feature">Home dashboard</td><td data-label="What it reads or does">Reads free and used RAM, battery level and battery temperature from Android and shows them to you.</td><td data-label="Leaves your device?"><span class="tag t-local">No</span></td></tr>
+          <tr><td data-label="Feature">Booster</td><td data-label="What it reads or does">Reads the list of apps that have a launcher icon, then asks Android to stop their background processes. It then compares free RAM before and after. Android may restart those apps.</td><td data-label="Leaves your device?"><span class="tag t-local">No</span></td></tr>
+          <tr><td data-label="Feature">Network</td><td data-label="What it reads or does">Checks whether you are on Wi-Fi, mobile data or Ethernet. The ping test opens a short connection to Google's public DNS server (<code>8.8.8.8</code>) and times it, so that server sees your IP address like any website would. When you choose a DNS, the app copies its hostname to your clipboard and opens Android settings; you set Private DNS yourself.</td><td data-label="Leaves your device?"><span class="tag t-out">Ping only</span></td></tr>
+          <tr><td data-label="Feature">Sensitivity and DPI</td><td data-label="What it reads or does">Reads your phone's manufacturer, model and total RAM to suggest starting values.</td><td data-label="Leaves your device?"><span class="tag t-local">No</span></td></tr>
+          <tr><td data-label="Feature">GFX presets, player configs and tips</td><td data-label="What it reads or does">Saves your choices and reading progress. When you tap Copy, the app writes text to your clipboard. It does not read your clipboard.</td><td data-label="Leaves your device?"><span class="tag t-local">No</span></td></tr>
+          <tr><td data-label="Feature">Language</td><td data-label="What it reads or does">Uses Google ML Kit to translate the app's text on your device. The language pack is downloaded from Google when you pick a language.</td><td data-label="Leaves your device?"><span class="tag t-out">Pack download</span></td></tr>
         </tbody>
       </table></div>
     </section>
@@ -200,10 +248,10 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--sub);font-siz
       <div class="tbl"><table>
         <thead><tr><th>Permission</th><th>Why</th></tr></thead>
         <tbody>
-          <tr><td>Internet</td><td>Ads, the ping test and language-pack downloads.</td></tr>
-          <tr><td>Network state</td><td>To show your connection type.</td></tr>
-          <tr><td>Kill background processes</td><td>Lets Booster ask Android to stop background apps. It cannot stop system apps and does not work on apps Android protects.</td></tr>
-          <tr><td>Advertising ID</td><td>Used by Google AdMob for ads, as described in section 2.</td></tr>
+          <tr><td data-label="Permission">Internet</td><td data-label="Why">Ads, the ping test and language-pack downloads.</td></tr>
+          <tr><td data-label="Permission">Network state</td><td data-label="Why">To show your connection type.</td></tr>
+          <tr><td data-label="Permission">Kill background processes</td><td data-label="Why">Lets Booster ask Android to stop background apps. It cannot stop system apps and does not work on apps Android protects.</td></tr>
+          <tr><td data-label="Permission">Advertising ID</td><td data-label="Why">Used by Google AdMob for ads, as described in section 2.</td></tr>
         </tbody>
       </table></div>
       <p>The app also asks Android which apps have a launcher icon, only so Booster knows which processes to stop. That list is not saved or uploaded.</p>
@@ -258,10 +306,18 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--sub);font-siz
 
     <section id="contact">
       <h2>Contact</h2>
+      <p class="who">App owner</p>
       <dl>
-        <dt>Developer</dt><dd>Krishna Chauhan</dd>
+        <dt>Name</dt><dd>Krishna Chauhan</dd>
         <dt>Email</dt><dd><a href="mailto:sunitadevi623988@gmail.com">sunitadevi623988@gmail.com</a></dd>
         <dt>Address</dt><dd>Bangalore, Karnataka, India</dd>
+      </dl>
+      <p class="who">Developer</p>
+      <dl>
+        <dt>Name</dt><dd>AD_FOISAL AHMED</dd>
+        <dt>Email</dt><dd><a href="mailto:mdf69309@gmail.com">mdf69309@gmail.com</a></dd>
+        <dt>WhatsApp</dt><dd><a href="https://wa.me/8801314400688">+880 1314-400688</a></dd>
+        <dt>Address</dt><dd>Rajshahi, Dhaka, Bangladesh</dd>
       </dl>
     </section>
   </main>
@@ -288,6 +344,22 @@ footer{border-top:1px solid var(--line);padding:28px 0;color:var(--sub);font-siz
 (function(){var t=document.querySelector('.top');if(!t)return;
 function f(){t.classList.toggle('show',window.scrollY>700)}
 window.addEventListener('scroll',f,{passive:true});f();})();
+</script>
+<script>
+(function(){
+  var bar=document.getElementById('bar'),nav=document.querySelector('nav'),ticking=false;
+  function upd(){
+    ticking=false;
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    if(bar)bar.style.width=(h>0?Math.min(100,window.scrollY/h*100):0)+'%';
+    var a=nav&&nav.querySelector('a.on');
+    if(a&&nav.scrollWidth>nav.clientWidth+4){
+      nav.scrollTo({left:a.offsetLeft-(nav.clientWidth-a.offsetWidth)/2,behavior:'smooth'});
+    }
+  }
+  window.addEventListener('scroll',function(){if(!ticking){ticking=true;requestAnimationFrame(upd);}},{passive:true});
+  upd();
+})();
 </script>
 </body>
 </html>
